@@ -35,6 +35,10 @@ body {
 
 img {
   max-width: 100%; }
+#logo {
+  width: 8em;
+  height: 3em;
+}
 
 a:focus,
 input:focus,
@@ -2161,10 +2165,6 @@ p {
 /*===========================
         09.NAVBAR css 
 ===========================*/
-.navbar-brand img {
-  width: 8em;
-  height: 3em;
-}
 .navbar-area {
   position: absolute;
   top: 0;
