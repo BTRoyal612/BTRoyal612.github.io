@@ -1,0 +1,280 @@
+/*===========================
+      01.COMMON css 
+===========================*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800");
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #121212; }
+
+#logo {
+max-width: 4.5em; }
+#banner {
+    width: 100%;
+}
+
+body {
+    background-image: url(../image/background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+/*===== All BOX Style =====*/
+.box-grad {
+    background-image: linear-gradient(to right, #D54086, #FEC66D);}
+.box-grad {
+    margin: 10px;
+    padding: 10px 0px;
+    height: auto;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    /* box-shadow: 0 0 20px #eee; */
+    border-radius: 20px;
+    display: block;}
+
+/*===== All Button Style =====*/
+/* .grad-btn {
+    background-image: linear-gradient(to top right, #D54086, #FEC66D);
+    border-radius: 20px;
+    border: none;
+    text-decoration: none;
+} */
+
+.btn-grad {
+    background-image: linear-gradient(to top right, #D54086, #FEC66D);}
+.btn-grad {
+    margin: 10px;
+    padding: 10px 0px;
+    width: 150px;
+    height: auto;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 20px;
+    display: block;
+}
+
+.btn-grad:hover {
+background-position: right center; /* change the direction of the change here */
+color: #fff;
+text-decoration: none;
+}
+
+
+/*===== All Section Title Style =====*/.section-title .title {
+    font-size: 44px;
+    font-weight: 600;
+    color: #121212;
+    line-height: 55px; }
+.section-title .text {
+    font-size: 20px;
+    line-height: 24px;
+    color: #121212;
+    margin-top: 24px; }
+@media (max-width: 767px) {
+    .section-title .title .text {
+        font-size: 100px;
+        line-height: 35px; } }
+
+/*===========================
+        09.NAVBAR css 
+===========================*/
+.navbar-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 99; }
+.navbar-area .navbar {
+    position: relative;
+    padding: 0; }
+.navbar-area .navbar .navbar-toggler .toggler-icon {
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin: 5px 0;
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s; }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar-area .navbar .navbar-collapse {
+      position: absolute;
+      top: 115%;
+      left: 0;
+      width: 100%;
+      background-color: #f4f6f7;
+      z-index: 8;
+      padding: 10px 0;
+      -webkit-box-shadow: 0px 10px 25px 0px rgba(18, 18, 18, 0.05);
+      -moz-box-shadow: 0px 10px 25px 0px rgba(18, 18, 18, 0.05);
+      box-shadow: 0px 10px 25px 0px rgba(18, 18, 18, 0.05); } }
+@media (max-width: 767px) {
+    .navbar-area .navbar .navbar-collapse {
+      position: absolute;
+      top: 115%;
+      left: 0;
+      width: 100%;
+      background-color: #f4f6f7;
+      z-index: 8;
+      padding: 10px 0;
+      -webkit-box-shadow: 0px 10px 25px 0px rgba(18, 18, 18, 0.05);
+      -moz-box-shadow: 0px 10px 25px 0px rgba(18, 18, 18, 0.05);
+      box-shadow: 0px 10px 25px 0px rgba(18, 18, 18, 0.05); } }
+
+
+.navbar-area .navbar .navbar-nav .nav-item {
+    margin: 0 16px;
+    position: relative; }
+.navbar-area .navbar .navbar-nav .nav-item a {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 26px 0;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    opacity: 0.8;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s; }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar-area .navbar .navbar-nav .nav-item a {
+        padding: 10px 0;
+        display: block;
+        color: #121212; } }
+@media (max-width: 767px) {
+    .navbar-area .navbar .navbar-nav .nav-item a {
+        padding: 10px 0;
+        display: block;
+        color: #121212; } }
+
+.navbar-area .navbar .navbar-btn {
+    position: absolute;
+    right: 0px;
+    top: 22px; }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar-area .navbar .navbar-btn {
+        position: absolute;
+        right: 70px;
+        top: 10px; } }
+@media (max-width: 767px) {
+    .navbar-area .navbar .navbar-btn {
+        position: absolute;
+        right: 60px;
+        top: 7px; } }
+.navbar-area .navbar .navbar-btn li {
+    display: inline-block;
+    margin-right: 5px; }
+.navbar-area .navbar .navbar-btn li a {
+    padding: 10px 16px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    border: 2px solid;
+    border-radius: 4px;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s; }
+.navbar-area .navbar .navbar-btn li a.light {
+    border-color: #fff; }
+.navbar-area .navbar .navbar-btn li a.light:hover {
+    background-color: rgba(255, 255, 255, 0.4); }
+.navbar-area .navbar .navbar-btn li a.solid {
+    background-color: #fff;
+    border-color: #fff;
+    color: #0067f4; }
+.navbar-area .navbar .navbar-btn li a.solid:hover {
+    background-color: transparent;
+    color: #fff; }
+
+
+/*===========================
+       15.ABOUT css 
+===========================*/
+.about-area {
+    padding-top: 80px;
+    padding-bottom: 130px;
+    position: relative; }
+.about-area .about-title .sub-title {
+    font-size: 25px;
+    font-weight: 400;
+    color: #0067f4;
+    text-transform: uppercase; }
+@media (max-width: 767px) {
+    .about-area .about-title .sub-title {
+        font-size: 16px; } }
+
+/*===========================
+    21.FOOTER css 
+===========================*/
+/*===== FOOTER FIVE =====*/
+.footer-area {
+    padding-top: 90px;
+    padding-bottom: 120px; }
+.footer-area .social li {
+    display: inline-block;
+    margin: 0 5px; }
+.footer-area .social li a img {
+    width: 50px;
+    color: red;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s; }
+.footer-area .social li a:hover {
+    color: #0067f4; }
+.footer-area .footer-support {
+    padding-top: 21px; }
+.footer-area .footer-support span {
+    font-size: 16px;
+    line-height: 24px;
+    color: #121212;
+    font-weight: 600;
+    margin-top: 9px;
+    display: block; }
+@media (max-width: 767px) {
+    .footer-area .footer-support span {
+        display: block; } }
+
+/*===== BACK TO TOP =====*/
+.back-to-top {
+    font-size: 20px;
+    color: #fff;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 5px;
+    background-color: #0067f4;
+    text-align: center;
+    z-index: 99;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    display: none; }
+.back-to-top:hover {
+    color: #fff;
+    background-color: #0067f4; }
+  
