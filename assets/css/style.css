@@ -12,7 +12,7 @@ html {
 }
 
 #about-img {
-    border-radius: 18px 0 0 18px;
+    border-radius: 18px;
     border: 1px solid white;
 }
 
@@ -22,9 +22,8 @@ html {
     width: 100%;
 }
 
-section {
-    padding-bottom: 100px;
-    margin-bottom: 30px;
+.section-nav {
+    padding: 120px;
 }
 
 body {
@@ -51,18 +50,17 @@ span {
     background-size: 200% auto;
     color: black; }
 .text-box {
-    padding: 15px 3px;
     border-radius: 20px;
     text-align: justify;}
 .time-box {
-    padding: 10px;
-    border-radius: 10px;}
+    padding: 0px 10px;
+    border-radius: 15px;}
 .title-box {
     color: white;
-    padding: 10px;
-    border-radius: 10px;
+    border-radius: 30px;
     display: block;}
 .sign-up-box {
+    margin: 20px auto;
     font-size: 20px;
     padding: 15px;
     width: 100px;
@@ -86,7 +84,6 @@ span {
 .btn-grad {
     background-image: linear-gradient(to top right, #D54086, #FEC66D);}
 .btn-grad {
-    margin: 10px;
     width: 150px;
     text-decoration: none;
     height: auto;
@@ -108,31 +105,28 @@ span {
 
 /*===== All Section Title Style =====*/
 .text {
-    color: white;}
+    color: white;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 10px }
 .title {
-    color: #FEC66D;}
-.section-title .title {
+    color: #FEC66D;
     font-size: 44px;
     font-weight: 600;
     line-height: 55px; }
-.section-title .text {
-    font-size: 20px;
-    line-height: 24px;
-    margin-top: 24px; }
 @media (max-width: 767px) {
     .section-title .title .text {
         font-size: 100px;
         line-height: 35px; } }
 
 /*===========================
-        09.NAVBAR css 
+        01.NAVBAR css 
 ===========================*/
 .navbar-area {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 0;
     z-index: 99; }
 .navbar-area .navbar {
     position: relative;
@@ -207,6 +201,8 @@ span {
     position: relative;
     right: 0px;
     top: px; }
+.navbar-btn ul {
+    margin: 0;}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .navbar-area .navbar .navbar-btn {
         position: absolute;
@@ -258,12 +254,12 @@ span {
 
 
 /*===========================
-       15.ABOUT css 
+       02.ABOUT css 
 ===========================*/
 .about-area {
-    padding-top: 80px;
-    padding-bottom: 130px;
     position: relative; }
+.about-area .text-box {
+    padding: 15px 3px; }
 .about-area .about-title .sub-title {
     font-size: 25px;
     font-weight: 400;
@@ -272,6 +268,36 @@ span {
 @media (max-width: 767px) {
     .about-area .about-title .sub-title {
         font-size: 16px; } }
+
+
+/*===========================
+        03.SIGN UP css 
+===========================*/
+
+
+/*===========================
+        04.INFORMATION css 
+===========================*/
+.information-area {
+    position: relative; }
+.information-area .title-box, .information-area .text-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+.information-area .title-box {
+    margin: 10px auto;
+    box-sizing: border-box;
+    padding: 0 20px;
+    width: 250px;
+    height: 80px;
+    font-size: 1.2em;}
+.information-area .text-box {
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 15px;
+    width: 340px;
+    height: 230px;
+    font-size: 1em;}
 
 /*===========================
     21.FOOTER css 
