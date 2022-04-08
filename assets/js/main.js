@@ -15,14 +15,11 @@ $(function() {
         var scroll = $(window).scrollTop();
         if (scroll < 20) {
             $(".navbar-area").removeClass("sticky");
-            $(".navbar-area img").attr("src", "assets/image/");
         } else {
             $(".navbar-area").addClass("sticky");
-            $(".navbar-area img").attr("src", "assets/image/");
         }
     });
 
-    
     //===== Section Menu Active
 
     var scrollLink = $('.page-scroll');
@@ -74,9 +71,9 @@ $(function() {
     // Show or hide the sticky footer button
     $(window).on('scroll', function(event) {
         if($(this).scrollTop() > 600){
-            $('.back-to-top').fadeIn(200)
+            $('.back-to-top').fadeIn(100)
         } else{
-            $('.back-to-top').fadeOut(200)
+            $('.back-to-top').fadeOut(100)
         }
     });
     
@@ -87,7 +84,7 @@ $(function() {
         
         $('html, body').animate({
             scrollTop: 0,
-        }, 1500);
+        }, 100);
     });
     
     

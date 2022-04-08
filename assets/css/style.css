@@ -5,13 +5,26 @@
 body {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
-  font-style: normal;
-  color: #121212; }
+  font-style: normal;}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#about-img {
+    border-radius: 18px 0 0 18px;
+    border: 1px solid white;
+}
 
 #logo {
-max-width: 4.5em; }
+    max-width: 4.5em; }
 #banner {
     width: 100%;
+}
+
+section {
+    padding-bottom: 100px;
+    margin-bottom: 30px;
 }
 
 body {
@@ -21,20 +34,46 @@ body {
     background-repeat: no-repeat;
     background-size: cover;}
 
+span {
+    font-size: 2em;
+}
+
 /*===== All BOX Style =====*/
-.box-grad {
+.box-grad-color1 {
     background-image: linear-gradient(to right, #D54086, #FEC66D);}
+.box-grad-color2 {
+    background-image: linear-gradient(to right, #D54086, #4D2F8E);}
 .box-grad {
     margin: 10px;
-    padding: 10px 0px;
     height: auto;
     text-align: center;
     transition: 0.5s;
     background-size: 200% auto;
-    color: white;            
-    /* box-shadow: 0 0 20px #eee; */
+    color: black; }
+.text-box {
+    padding: 15px 3px;
     border-radius: 20px;
+    text-align: justify;}
+.time-box {
+    padding: 10px;
+    border-radius: 10px;}
+.title-box {
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
     display: block;}
+.sign-up-box {
+    font-size: 20px;
+    padding: 15px;
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #eee; }
+
+
+/* @media (max-width: 991px) {
+    .box-grad {
+        display: block; } } */
+
 
 /*===== All Button Style =====*/
 /* .grad-btn {
@@ -48,8 +87,8 @@ body {
     background-image: linear-gradient(to top right, #D54086, #FEC66D);}
 .btn-grad {
     margin: 10px;
-    padding: 10px 0px;
     width: 150px;
+    text-decoration: none;
     height: auto;
     text-align: center;
     text-transform: uppercase;
@@ -61,21 +100,24 @@ body {
 }
 
 .btn-grad:hover {
-background-position: right center; /* change the direction of the change here */
-color: #fff;
-text-decoration: none;
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
 }
 
 
-/*===== All Section Title Style =====*/.section-title .title {
+/*===== All Section Title Style =====*/
+.text {
+    color: white;}
+.title {
+    color: #FEC66D;}
+.section-title .title {
     font-size: 44px;
     font-weight: 600;
-    color: #121212;
     line-height: 55px; }
 .section-title .text {
     font-size: 20px;
     line-height: 24px;
-    color: #121212;
     margin-top: 24px; }
 @media (max-width: 767px) {
     .section-title .title .text {
@@ -90,7 +132,7 @@ text-decoration: none;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 0;
     z-index: 99; }
 .navbar-area .navbar {
     position: relative;
@@ -134,18 +176,17 @@ text-decoration: none;
 
 
 .navbar-area .navbar .navbar-nav .nav-item {
-    margin: 0 16px;
+    margin: 0 8px;
     position: relative; }
 .navbar-area .navbar .navbar-nav .nav-item a {
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
-    padding: 26px 0;
+    padding: 18px;
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
     position: relative;
-    opacity: 0.8;
     -webkit-transition: all 0.3s ease-out 0s;
     -moz-transition: all 0.3s ease-out 0s;
     -ms-transition: all 0.3s ease-out 0s;
@@ -163,30 +204,22 @@ text-decoration: none;
         color: #121212; } }
 
 .navbar-area .navbar .navbar-btn {
-    position: absolute;
+    position: relative;
     right: 0px;
-    top: 22px; }
+    top: px; }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .navbar-area .navbar .navbar-btn {
         position: absolute;
-        right: 70px;
-        top: 10px; } }
+        right: 70px; } }
 @media (max-width: 767px) {
     .navbar-area .navbar .navbar-btn {
         position: absolute;
-        right: 60px;
-        top: 7px; } }
+        right: 60px; } }
 .navbar-area .navbar .navbar-btn li {
     display: inline-block;
     margin-right: 5px; }
 .navbar-area .navbar .navbar-btn li a {
-    padding: 10px 16px;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 700;
     color: #fff;
-    border: 2px solid;
-    border-radius: 4px;
     -webkit-transition: all 0.3s ease-out 0s;
     -moz-transition: all 0.3s ease-out 0s;
     -ms-transition: all 0.3s ease-out 0s;
@@ -203,6 +236,25 @@ text-decoration: none;
 .navbar-area .navbar .navbar-btn li a.solid:hover {
     background-color: transparent;
     color: #fff; }
+
+.navbar-area.sticky {
+    background-color: white;
+    z-index: 999;
+    position: fixed;
+    -webkit-box-shadow: 0px 10px 25px 0px rgba(18, 18, 18, 0.05);
+    -moz-box-shadow: 0px 10px 25px 0px rgba(18, 18, 18, 0.05);
+    box-shadow: 0px 10px 25px 0px rgba(18, 18, 18, 0.05); }
+.navbar-area.sticky .navbar .navbar-toggler .toggler-icon {
+    background-color: #121212; }
+.navbar-area.sticky .navbar .navbar-nav .nav-item a {
+    color: white;
+    opacity: 0.7; }
+.navbar-area.sticky .navbar .navbar-nav .nav-item a::before {
+    background: -webkit-linear-gradient(left, rgba(18, 18, 18, 0) 0%, #121212 100%);
+    background: -o-linear-gradient(left, rgba(18, 18, 18, 0) 0%, #121212 100%);
+    background: linear-gradient(to right, rgba(18, 18, 18, 0) 0%, #121212 100%); }
+.navbar-area.sticky .navbar .navbar-nav .nav-item.active, .navbar-area.sticky .navbar .navbar-nav .nav-item a:hover {
+    opacity: 1; }
 
 
 /*===========================
@@ -227,7 +279,8 @@ text-decoration: none;
 /*===== FOOTER FIVE =====*/
 .footer-area {
     padding-top: 90px;
-    padding-bottom: 120px; }
+    padding-bottom: 120px; 
+    scroll-behavior: smooth;}
 .footer-area .social li {
     display: inline-block;
     margin: 0 5px; }
