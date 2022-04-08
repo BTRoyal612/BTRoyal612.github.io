@@ -15,7 +15,7 @@ $(function() {
         var scroll = $(window).scrollTop();
         if (scroll < 20) {
             $(".navbar-area").removeClass("sticky");
-            $(".navbar-area img").attr("src", "assets/images/logo/projectx-logo-02.jpg");
+            $(".navbar-area img").attr("src", "assets/images/logo/projectx-logo-blue.JPG");
         } else {
             $(".navbar-area").addClass("sticky");
             $(".navbar-area img").attr("src", "assets/images/logo/projectx-logo-02.jpg");
@@ -92,20 +92,4 @@ $(function() {
     
     
     //===== 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 });

@@ -39,6 +39,10 @@ img {
   width: 8em;
   height: 3em;
 }
+.navbar-area.sticky #logo {
+  width: 8em;
+  height: 3em;
+}
 
 a:focus,
 input:focus,
